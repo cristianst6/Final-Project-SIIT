@@ -54,7 +54,7 @@ const Weather = ({ style }) => {
         setData(response.data);
         setDisplay("grid");
         setBackground(
-          `/imgweather/${response.data.weather[0].main.toLowerCase()}.jpeg`
+          `/imgweather/${response.data.weather[0].main.toLowerCase()}.jpeg`,
         );
       });
       setLocation("");
