@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+}
+
+.photo {
+  border-radius: 180px;
+  padding: 20px;
+  height: 300px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.about:before {
+  content: "";
+  position: absolute;
+  background: url(../../assets/studyimg.jpeg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.contentaboutme p {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}

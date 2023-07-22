@@ -1,0 +1,95 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(
+    to left,
+    #0fb8e0,
+    #0090c2,
+    #0069a0,
+    #01447b,
+    #0d2154
+  );
+  opacity: 0.8;
+}
+
+.navbar .containernavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 10px;
+}
+
+.navbar .logo h1 {
+  font-size: 50px;
+}
+
+.navbar .logo .icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.hamburger {
+  display: none;
+  padding: 10px;
+}
+
+.navbar .navmenu {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.navbar li {
+  padding: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar .icon {
+  font-size: 16px;
+  color: white;
+}
+
+@media screen and (max-width: 940px) {
+  .navbar .hamburger {
+    display: block;
+    z-index: 15;
+  }
+  .navbar .navmenu {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.5 ease-in;
+    overflow-x: hidden;
+  }
+
+  .navbar .active {
+    left: 0;
+  }
+
+  .navbar li {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .navbar button {
+    font-size: 18px;
+  }
+}

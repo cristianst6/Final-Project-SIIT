@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Comic+Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 66px;
+}
+
+.containerweather {
+  max-width: 700px;
+  height: 550px;
+  margin: auto;
+  padding: 0 1rem;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-row: auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: space-evenly;
+}
+
+.feels_temp,
+.wind,
+.min_temp,
+.max_temp {
+  padding: 2px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.105);
+  text-align: center;
+}
+
+.bold {
+  font-weight: 1000;
+}
+
+.searchbar {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  padding: 7px 25px;
+  font-size: 20px;
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 3px rgba(0, 0, 0, 0.4);
+}
+
+::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.location p {
+  font-size: 35px;
+}
